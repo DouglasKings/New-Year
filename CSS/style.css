@@ -1,0 +1,111 @@
+/* General styling for all elements*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/assets/img/Newyears.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+}
+
+.countdown span {
+    font-size: 1.3rem;
+}
+
+#blast-off-message {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .countdown-container {
+        flex-direction: column;
+    }
+
+    .countdown {
+        margin: 0.5rem;
+    }
+
+    .text {
+        font-size: 3rem;
+    }
+
+    .countdown span {
+        font-size: 1rem;
+    }
+
+    #blast-off-message {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+}
+
+/* For screens between 768px and 1024px (typical tablets) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .text {
+        font-size: 4rem;
+    }
+
+    .countdown span {
+        font-size: 1.1rem;
+    }
+
+    #blast-off-message {
+        font-size: 3rem;
+    }
+}
+
+/* For screens larger than 1024px (desktops and larger tablets) */
+@media screen and (min-width: 1025px) {
+    .countdown-container {
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 2rem auto;
+    }
+}
